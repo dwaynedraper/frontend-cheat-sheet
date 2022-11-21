@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-item {
+    @apply hover:bg-slate-500 text-slate-300 p-3 w-fit text-center
+  }
+
+  .sidebar-item {
+    @apply hover:bg-slate-500 text-slate-300 p-3 text-center
+  }
+
+}
