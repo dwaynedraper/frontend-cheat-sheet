@@ -1,6 +1,7 @@
 import React from 'react'
 import NavItem from '../ui/NavItem'
 import NavDropdown from './NavDropdown'
+import FECS from '../../public/FECS.svg'
 
 export default function NavBar() {
   return (
@@ -14,7 +15,8 @@ export default function NavBar() {
       </nav>
       {/* This is the actual navbar */}
       <nav className='bg-slate-800 flex pl-10 w-screen fixed z-10 top-0'>
-        <ul className='flex space-x-3'>
+
+        <ul className='flex space-x-3 pl-8 items-center'>
           <NavItem value='Home' />
           <NavItem value='Components' />
           <NavItem value='Cheat Sheets' />

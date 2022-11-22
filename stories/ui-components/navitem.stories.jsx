@@ -6,9 +6,7 @@ export default {
 }
 
 export const NavItemComponent = () => (
-  <>
+  <ul>
     <NavItem value="Home"/>
-    <NavItem value="About"/>
-    <NavItem value="Contact Us"/>
-  </>
+  </ul>
   )
