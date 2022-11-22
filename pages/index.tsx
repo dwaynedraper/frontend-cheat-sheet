@@ -6,6 +6,7 @@ import NavItem from '../components/ui/NavItem'
 import SidebarItem from '../components/ui/SidebarItem'
 import NavBar from '../components/complex/NavBar'
 import Sidebar from '../components/complex/Sidebar'
+import Landing from './TextEffects'
 import Alert from '../components/ui/Alert'
 import { AlertType } from '../types/alerts'
 
@@ -23,13 +24,9 @@ const Home: NextPage = () => {
       {/* <Sidebar /> */}
 
       {/* = === ====== Main ======================================= ========= === = */}
-      <div className='h-screen w-full max-w-screen bg-slate-300 grow p-4'>
-
+      <div className='h-screen w-full max-w-screen bg-white grow p-4 flex flex-col items-center'>
+        <Landing />
         {/* Component Testing */}
-        {/* <div className='px-10 py-5 rounded-lg bg-red-100 border border-red-400 text-red-800 relative w-fit mx-auto' role="alert">
-          <strong className='font-bold'>Alert!</strong>
-          <span className='block sm:inline'>Something not ideal might be happening.</span>
-        </div> */}
         {/* <Alert type={AlertType.Success} strongText='Awesome!' message='Your profile has been updated.' /> */}
       </div>
     </div>
