@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import SidebarItem from '../ui/SidebarItem'
+import SidebarItem from '../base-ui/SidebarItem'
 import logo from '../../public/logo.png'
 
 export default function Sidebar() {

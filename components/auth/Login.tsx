@@ -1,5 +1,5 @@
 import React from "react";
-import TextInput from "../../components/TextInput";
+import TextInput from "../base-ui/TextInput";
 import { useFormState } from "../../hooks/useFormState";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { login, selectUser } from "./authSlice";

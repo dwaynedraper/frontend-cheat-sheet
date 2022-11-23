@@ -1,5 +1,5 @@
 import React from 'react'
-import NavItem from '../ui/NavItem'
+import NavItem from '../base-ui/NavItem'
 import NavDropdown from './NavDropdown'
 import FECS from '../../public/FECS.svg'
 

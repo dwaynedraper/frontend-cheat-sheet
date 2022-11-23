@@ -2,12 +2,12 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
-import NavItem from '../components/ui/NavItem'
-import SidebarItem from '../components/ui/SidebarItem'
+import NavItem from '../components/base-ui/NavItem'
+import SidebarItem from '../components/base-ui/SidebarItem'
 import NavBar from '../components/complex/NavBar'
 import Sidebar from '../components/complex/Sidebar'
 import Landing from './TextEffects'
-import Alert from '../components/ui/Alert'
+import Alert from '../components/base-ui/Alert'
 import { AlertType } from '../types/alerts'
 
 const Home: NextPage = () => {

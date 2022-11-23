@@ -1,6 +1,6 @@
 import React from 'react'
 import { useFormState } from '../../hooks/useFormState'
-import FormInput from '../ui/FormInput'
+import FormInput from '../base-ui/FormInput'
 
 
 type FormProps = {
