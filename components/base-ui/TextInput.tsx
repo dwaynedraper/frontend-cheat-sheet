@@ -12,10 +12,10 @@ type TextInputProps = {
 export default function TextInput({ name, label, value, placeholder, handleChange }: TextInputProps) {
   return (
     <>
-      <div className='form-floating mb-1'>
+      <div >
         <input
           type={name}
-          className='form-control'
+
           id={name}
           placeholder={placeholder}
           style={{ width: "330px" }}

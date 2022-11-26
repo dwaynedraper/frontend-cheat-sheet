@@ -2,7 +2,7 @@ import React from "react";
 import "./SignUp.css";
 import "../login.css";
 import { useFormState } from "../../hooks/useFormState";
-import TextInput from "../../components/TextInput";
+import TextInput from "../base-ui/TextInput";
 import { createUser, selectUser } from "./authSlice";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 
@@ -28,9 +28,9 @@ export default function SignUp() {
   };
 
   return (
-    <main className='form-signin w-100 m-auto'>
+    <main>
       <form>
-        <h1 className='h3 mb-3 fw-normal'>Sign Up</h1>
+        <h1>Sign Up</h1>
         <p>Please fill out this form to create an account!</p>
 
         <TextInput
@@ -69,7 +69,6 @@ export default function SignUp() {
         />
 
         <button
-          className='w-100 btn btn-lg btn-primary'
           type='button'
           onClick={handleSubmit}
         >

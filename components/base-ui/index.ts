@@ -5,3 +5,4 @@ export * from './NavItem';
 export * from './PasswordInput';
 export * from './SidebarItem';
 export * from './TextArea';
+export * from './TextInput';

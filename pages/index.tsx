@@ -6,9 +6,11 @@ import NavItem from '../components/base-ui/NavItem'
 import SidebarItem from '../components/base-ui/SidebarItem'
 import NavBar from '../components/complex/NavBar'
 import Sidebar from '../components/complex/Sidebar'
-import Landing from './TextEffects'
+import TextEffects from './text-effects'
 import Alert from '../components/base-ui/Alert'
 import { AlertType } from '../types/alerts'
+import Hero from '../components/complex/Hero'
+import NavDropdown from '../components/complex/NavDropdown'
 
 const Home: NextPage = () => {
   return (
@@ -19,13 +21,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* The navbar and sidebar don't have fully compatible css. Pick one or the other, or make adjustments. */}
-      <NavBar />
+
       {/* <Sidebar /> */}
 
       {/* = === ====== Main ======================================= ========= === = */}
-      <div className='h-screen w-full max-w-screen bg-white grow p-4 flex flex-col items-center'>
-        <Landing />
+      <div className='h-screen w-full max-w-screen bg-slate-100 grow p-4 flex flex-col items-center py-20'>
+        <div className='text-6xl'>Frontend Cheat Sheet</div>
+        <hr className='w-full border border-gray-200 rounded pt-8' />
+        <Hero />
+
+        {/* <TextEffects /> */}
         {/* Component Testing */}
         {/* <Alert type={AlertType.Success} strongText='Awesome!' message='Your profile has been updated.' /> */}
       </div>

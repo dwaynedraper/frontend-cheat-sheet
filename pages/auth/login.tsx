@@ -1,8 +1,8 @@
 import React from "react";
-import TextInput from "../components/base-ui/TextInput";
-import { useFormState } from "../hooks/useFormState";
-import { useAppDispatch, useAppSelector } from "../store/hooks";
-import { login, selectUser } from "../components/auth/authSlice";
+import TextInput from "../../components/base-ui/TextInput";
+import { useFormState } from "../../hooks/useFormState";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { login, selectUser } from "../../components/auth/authSlice";
 
 export default function Login() {
   const [state, handleChange] = useFormState({
@@ -21,9 +21,9 @@ export default function Login() {
   };
 
   return (
-    <main className='form-signin w-100 m-auto'>
-      <form>
-        <h1 className='h3 mb-3 fw-normal'>Please sign in</h1>
+    <main className="h-screen w-full max-w-screen bg-slate-100 grow p-4 flex flex-col items-center">
+      <form className="mx-auto">
+        <h1 >Please sign in</h1>
 
         <TextInput
           name='email'
@@ -41,17 +41,17 @@ export default function Login() {
           handleChange={handleChange}
         />
 
-        <div className='checkbox mb-3'>
+        <div >
           <label>
             <input type='checkbox' value='remember-me' /> Remember me
           </label>
         </div>
 
-        <button className='w-100 btn btn-lg btn-primary' type="button" onClick={handleSubmit}>
+        <button type="button" onClick={handleSubmit}>
           Sign in
         </button>
 
-        <p className='mt-5 mb-3 text-muted'>© 2022 deandraper.dev</p>
+        <p >© 2022 deandraper.dev</p>
       </form>
     </main>
   );

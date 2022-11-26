@@ -3,7 +3,18 @@ import NavItem from '../base-ui/NavItem'
 import NavDropdown from './NavDropdown'
 import FECS from '../../public/FECS.svg'
 
-export default function NavBar() {
+type NavBarProps = {
+  children: React.ReactNode
+}
+
+/**
+ * *NavBar is a fixed, full-width navbar that is always visible.
+ * NOTE: This component is not yet compatible with the Sidebar component.
+ *  If you use items other than the recommended ones, edit the invisible bar to match height.
+ * @param props - NavItem, NavDropdown, or Search components.
+ * @returns JSX.Element
+ */
+export default function NavBar(props: NavBarProps): JSX.Element {
   return (
     <div className='w-screen'>
       {/* The first nav is strictly for the purpose of occupying space, as the actual fixed */}
@@ -15,13 +26,8 @@ export default function NavBar() {
       </nav>
       {/* This is the actual navbar */}
       <nav className='bg-slate-800 flex pl-10 w-screen fixed z-10 top-0'>
-
         <ul className='flex space-x-3 pl-8 items-center'>
-          <NavItem value='Home' />
-          <NavItem value='Components' />
-          <NavItem value='Cheat Sheets' />
-          <NavItem value='Canvas API' />
-          <NavDropdown value='Scroll Effects' dropownOptions={['Static Parallax', 'Multiple Parallax', 'Animated Scrolling']} />
+          {props.children}
         </ul>
       </nav>
     </div>
