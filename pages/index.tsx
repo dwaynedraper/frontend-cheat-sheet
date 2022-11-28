@@ -4,13 +4,13 @@ import Image from 'next/image'
 
 import NavItem from '../components/base-ui/NavItem'
 import SidebarItem from '../components/base-ui/SidebarItem'
-import NavBar from '../components/complex/NavBar'
-import Sidebar from '../components/complex/Sidebar'
+import NavBar from '../components/composite/NavBar'
+import Sidebar from '../components/composite/Sidebar'
 import TextEffects from './text-effects'
 import Alert from '../components/base-ui/Alert'
 import { AlertType } from '../types/alerts'
-import Hero from '../components/complex/Hero'
-import NavDropdown from '../components/complex/NavDropdown'
+import Hero from '../components/composite/Hero'
+import NavDropdown from '../components/composite/NavDropdown'
 
 const Home: NextPage = () => {
   return (

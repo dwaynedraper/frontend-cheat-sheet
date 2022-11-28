@@ -14,7 +14,7 @@ type InputProps = {
  * @param {InputProps} props The props for the Input component
  * @returns {JSX.Element} The Input component with embedded icon
  */
-export default function InputLeftIcon(props: InputProps): JSX.Element {
+export default function Input(props: InputProps): JSX.Element {
   return (
     <div className="relative flex items-center mt-4">
       <span className="absolute">

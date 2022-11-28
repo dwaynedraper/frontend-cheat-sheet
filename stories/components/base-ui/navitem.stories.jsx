@@ -1,4 +1,4 @@
-import NavItem from "../../components/ui/NavItem";
+import NavItem from "../../../components/base-ui/NavItem";
 
 export default {
   title: "Components/NavItem",

@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 type SidebarProps = {
   value: string
-}
+  href: string
+};
 
 /**
  * *SidebarItem is a single item in the sidebar.
@@ -14,6 +16,6 @@ type SidebarProps = {
  */
 export default function SidebarItem(props: SidebarProps): JSX.Element {
   return (
-    <li className='sidebar-item'>{props.value}</li>
+    <li className='sidebar-item'><Link href={props.href}>{props.value}</Link></li>
   )
 }

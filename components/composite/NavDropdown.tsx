@@ -4,7 +4,7 @@ import SidebarItem from '../base-ui/SidebarItem'
 
 type NavDropdownProps = {
   value: string
-  dropownOptions: string[]
+  children: React.ReactNode
 }
 
 export default function NavDropdown(props: NavDropdownProps) {
@@ -13,9 +13,7 @@ export default function NavDropdown(props: NavDropdownProps) {
       <div className='dropdown hover:bg-slate-500 p-3'>
         <label tabIndex={0}>Scroll Effects <ChevronDownIcon className='h-4 w-4 inline stroke-2' /></label>
         <ul tabIndex={0} className="dropdown-content menu shadow bg-slate-800 w-52">
-          {props.dropownOptions.map((option, index) => (
-            <SidebarItem key={index} value={option} />
-          ))}
+          {props.children}
         </ul>
       </div>
     </li>

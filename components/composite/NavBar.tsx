@@ -21,7 +21,7 @@ export default function NavBar(props: NavBarProps): JSX.Element {
       {/* navbar is out of the flow of the document, and other content was ending up beneath it */}
       <nav className='w-screen invisible'>
         <ul className='flex'>
-          <NavItem value='None' />
+          <NavItem value='None' href="#" />
         </ul>
       </nav>
       {/* This is the actual navbar */}
