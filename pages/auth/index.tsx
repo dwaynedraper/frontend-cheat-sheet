@@ -34,7 +34,7 @@ export default function Auth() {
     <section className="bg-white dark:bg-gray-900">
       <div className="container flex items-center justify-center min-h-screen px-6 mx-auto">
         <form className="w-full max-w-md">
-          <img className="object-cover w-24 h-24 mx-auto rounded-full" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="user avatar" />
+          <img className="object-cover w-24 h-24 mx-auto rounded-full" src="logo-square.png" alt="user avatar" />
 
           <div className="flex items-center justify-center mt-6">
             <a href="#" className="w-1/3 pb-4 font-medium text-center text-gray-500 capitalize border-b dark:border-gray-400 dark:text-gray-300">
