@@ -21,19 +21,19 @@ export default function GridListWithImage(props: HeroProps): JSX.Element {
           <div className="grid w-full grid-cols-1 gap-8 lg:w-1/2 xl:gap-16 md:grid-cols-2">
             <HeroCard
               header="Storybook Library"
-              body="Browse our Storybook library to see all of the components in action."
+              body="Browse our Storybook library to see all of the components in action. You can test and edit them before downloading."
             />
             <HeroCard
               header="Styles & Themes"
-              body="Change the look and feel of your app with changes to one or two files."
+              body="Change the look and feel of your app with changes to one or two files. We've got you covered with dark and light themes, and modern styling."
             />
             <HeroCard
-              header="Modular Components"
-              body="Components that are built from Base UI Components and are ready to use."
+              header="Composite Components"
+              body="Save time building the most common composite elements like navbars, heros, CTAs and pricing cards. Just pass in props with your styling and text."
             />
             <HeroCard
               header="Base UI Components"
-              body="Buttons, Inputs, Text Areas and other elements you need to build new components."
+              body="Buttons, inputs, text areas, navbar items and more are prebuilt and easy to customize. All components are built to be responsive and mobile first."
             />
           </div>
 
