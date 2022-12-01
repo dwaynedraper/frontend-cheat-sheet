@@ -1,5 +1,5 @@
 export * from './Form'
-export * from './Hero'
+export * from '../heros/GridListWithImage'
 export * from './HeroCard'
 export * from '../layout/Layout'
 export * from './Modal'

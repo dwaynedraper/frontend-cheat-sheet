@@ -1,13 +1,13 @@
 import React from "react"
-import HeroCard from "./HeroCard"
+import HeroCard from "../composite/HeroCard"
 
 type HeroProps = {
   children?: React.ReactNode
 }
 
-export default function Hero(props: HeroProps): JSX.Element {
+export default function GridListWithImage(props: HeroProps): JSX.Element {
   return (
-    <section>
+    <section className="bg-slate-200 w-screen">
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-3xl font-semibold text-slate-700 capitalize lg:text-4xl ">Browse Our Storybook<br />Component Library</h1>
 
@@ -24,8 +24,8 @@ export default function Hero(props: HeroProps): JSX.Element {
               body="Browse our Storybook library to see all of the components in action."
             />
             <HeroCard
-              header="Customizable Themes"
-              body="Change the look and feel of your app with a few clicks."
+              header="Styles & Themes"
+              body="Change the look and feel of your app with changes to one or two files."
             />
             <HeroCard
               header="Modular Components"

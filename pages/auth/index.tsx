@@ -4,16 +4,31 @@ import LockIcon from '../../components/icons/LockIcon'
 import MailIcon from '../../components/icons/MailIcon'
 import PeopleIcon from '../../components/icons/PeopleIcon'
 import { useFormState } from '../../hooks/useFormState'
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 export default function Auth() {
+  const { data: session } = useSession()
   const [state, handleChange] = useFormState({
     email: '',
     password: '',
   })
+
+  let handleClick;
+  let buttonText;
   // const user = useAppSelector(selectUser)
   // const dispatch = useAppDispatch()
 
-
+  if (session) {
+    handleClick = () => signOut()
+    buttonText = 'Sign out'
+  } else {
+    handleClick = () => signIn('github', {
+      redirect: false,
+      email: state.email,
+      password: state.password,
+    })
+    buttonText = 'Sign in'
+  }
 
   return (
     <section className="bg-white dark:bg-gray-900">
@@ -31,7 +46,7 @@ export default function Auth() {
             </a>
           </div>
 
-          <Input icon={<PeopleIcon />} name='username' type="text" placeholder="username" handleChange={handleChange} />
+          <Input icon={<PeopleIcon />} name='username' type="text" placeholder="Username" handleChange={handleChange} />
           <Input icon={<MailIcon />} name='email' type="email" placeholder="Email" handleChange={handleChange} />
           <Input icon={<LockIcon />} name='password' type="password" placeholder="Enter Password" handleChange={handleChange} />
           <Input icon={<LockIcon />} name='password' type="password" placeholder="Confirm Password" handleChange={handleChange} />
@@ -39,8 +54,8 @@ export default function Auth() {
 
 
           <div className="mt-6">
-            <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-              Sign Up
+            <button onClick={handleClick} className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+              {buttonText}
             </button>
 
             <div className="mt-6 text-center ">
