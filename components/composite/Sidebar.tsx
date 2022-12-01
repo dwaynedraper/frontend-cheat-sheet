@@ -28,7 +28,7 @@ export default function Sidebar(props: SidebarProps): JSX.Element {
         />
         <ul className='flex flex-col w-full'>
           {props.items.map((item) => (
-            <SidebarItem key={item} value={item} />
+            <SidebarItem key={item} value={item} href="/" />
           ))}
         </ul>
         <div><p className="text-sm text-center p-3 absolute inset-x-0 bottom-0">©Dean Draper 2022</p></div>
