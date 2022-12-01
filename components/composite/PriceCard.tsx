@@ -24,12 +24,12 @@ export default function PriceCard(props: PriceCardProps): JSX.Element {
       </div>
 
       <ul className="flex-1 space-y-4">
-        {props.benefits.map((benefit) => (
-          <li className="text-gray-500 dark:text-gray-400">{benefit}</li>
+        {props.benefits.map((benefit, index) => (
+          <li className="text-gray-500 dark:text-gray-400" key={index} >{benefit}</li>
         ))}
       </ul>
 
-      <Link href="/auth" passHref>
+      <Link href="/login" passHref>
         <button className="inline-flex items-center justify-center px-4 py-2 font-medium text-white uppercase transition-colors bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none">
           {props.buttonText}
         </button>
