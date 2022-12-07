@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Frontend Cheat Sheet</title>
-        <meta name="description" content="Demo app for Dean Draper" />
+        <meta name="description" content="Frontend Tools and Code" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

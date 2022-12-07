@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function TextEffects() {
+export default function TextEffectsPage() {
 
   //* The landing page will first contain a hero section with the site name in 'shadow letters'.
   //* In each div, there will be a photo on one side, and text on the other.

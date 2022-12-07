@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function components() {
+export default function ComponentsPage() {
   return (
     <div>components</div>
   )

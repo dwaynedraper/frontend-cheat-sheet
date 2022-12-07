@@ -17,7 +17,7 @@ export default function HeroCard(props: HeroCardProps): JSX.Element {
 
         <h1 className="text-2xl font-semibold text-gray-700 capitalize ">{props.header}</h1>
 
-        <p className="text-gray-500 ">
+        <p className="text-gray-700 ">
           {props.body}
         </p>
       </div>

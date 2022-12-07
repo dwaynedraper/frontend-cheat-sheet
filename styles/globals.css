@@ -3,12 +3,24 @@
 @tailwind utilities;
 
 @layer components {
+  .nav {
+    @apply w-full flex justify-between items-center
+  }
+
   .nav-item {
-    @apply bg-slate-800 hover:bg-slate-500 text-slate-300 p-3 w-fit text-center
+    @apply p-3 w-fit text-center hover:border hover:border-0 hover:border-b-4 hover:border-b-red-600
+  }
+
+  .nav-item-color {
+    @apply bg-slate-800 hover:bg-slate-500 text-slate-300 
   }
 
   .sidebar-item {
-    @apply bg-slate-800 hover:bg-slate-500 text-slate-300 p-3 text-center
+    @apply p-3 text-center
+  }
+
+  .sidebar-item-color {
+    @apply bg-slate-800 hover:bg-slate-500 text-slate-300
   }
 
   .alert-error {
@@ -40,4 +52,25 @@
   text-shadow: -15px 5px 20px #888888;
   letter-spacing: -0.1em;
   font-family: 'Anton', Arial, sans-serif;
+}
+
+@media(max-width: 767px) {
+  .bg-grad-hor {
+    background: linear-gradient(transparent 5%,hsla(0,0%,100%,.85) 28%,hsla(0,0%,100%,.85) 69%)
+  }
+}
+
+.footer-title{
+  text-transform:uppercase;
+  margin-bottom:.5rem;
+  font-weight:700;
+  color: #fff;
+}
+
+.footer-blue {
+  background-color: #00043a;
+}
+
+.footer-darkblue {
+  background-color: #01042f;
 }
