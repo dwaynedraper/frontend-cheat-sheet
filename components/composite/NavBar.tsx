@@ -16,7 +16,7 @@ type NavBarProps = {
  */
 export default function NavBar(props: NavBarProps): JSX.Element {
   return (
-    <div className='w-screen hidden'>
+    <div className='w-screen'>
       {/* The first nav is strictly for the purpose of occupying space, as the actual fixed */}
       {/* navbar is out of the flow of the document, and other content ends up beneath it. */}
       <nav className='w-screen invisible'>
