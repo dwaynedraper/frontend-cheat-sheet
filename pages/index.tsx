@@ -16,12 +16,12 @@ const Home: NextPage = () => {
       </Head>
 
       {/* = === ====== Main ======================================= ========= === = */}
-      <div className='h-screen w-full max-w-screen bg-slate-400 grow p-4 flex flex-col items-center'>
+      <div className='flex flex-col items-center w-full h-screen p-4 max-w-screen bg-slate-400 grow'>
         <hr className='invisible' />
         <CTA />
         <GridListWithImage />
         <Pricing />
-        <MongoTest />
+        {/* <MongoTest /> */}
       </div>
     </div>
   )

@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Exo 2', 'sans-serif'],
+      },
+      height: {
+        'one-fifty': '150vh',
+        'double': '200vh'
       }
     },
     backgroundPosition: {
@@ -17,7 +21,7 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    styled: false,
+    styled: true,
     base: true,
     darkTheme: "night",
   },
